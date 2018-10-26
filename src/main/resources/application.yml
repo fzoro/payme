@@ -1,0 +1,19 @@
+server.port: 9090
+
+spring:
+  profiles: default
+
+app:
+  test: Default property
+---
+
+spring:
+  profiles: test
+app:
+  test: Test property
+---
+
+spring:
+  profiles: prod
+app:
+  test: Production test property
